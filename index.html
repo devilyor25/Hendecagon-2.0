@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hendecagon 2.0</title>
+  <link rel="icon" type="png" href="home-img/webicon.png">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css'>
+  <link rel="stylesheet" href="./style.css">
+  <script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+      const navButtons = document.querySelectorAll('.nav-button');
+
+      const buttonUrls = [
+        "index.html",
+        "pricing.html",
+        "services.html",
+        "app.html",
+        "data.html",
+        "cctv.html",
+        "food.html",
+        "about.html",
+        "team.html",
+        "#"
+      ];
+
+      navButtons.forEach((button, index) => {
+        button.addEventListener('click', () => {
+          window.location.href = buttonUrls[index];
+        });
+      });
+    });
+  </script>
+</head>
+<body>
+  <div id="nav-bar">
+    <input id="nav-toggle" type="checkbox"/>
+    <div id="nav-header">
+      <a id="nav-title" href="https://www.facebook.com/profile.php?id=61552326696109" target="_blank">HENDECAG<i class="fab fa-codepen"></i>N</a>
+      <label for="nav-toggle"><span id="nav-toggle-burger"></span></label>
+      <hr/>
+    </div>
+    <div id="nav-content">
+      <div class="nav-button"><i class="fas fa-home"></i><span>Home</span></div>
+      <div class="nav-button"><i class="fas fa-database"></i><span>Pricing</span></div>
+      <div class="nav-button"><i class="fas fa-thumbtack"></i><span>Services</span></div>
+      <hr/>
+      <div class="nav-button"><i class="fas fa-address-book"></i><span> System Application</span></div>
+      <div class="nav-button"><i class="fas fa-file-alt"></i><span>Data Base</span></div>
+      <div class="nav-button"><i class="fas fa-camera"></i><span>CCTV Access</span></div>
+      <div class="nav-button"><i class="fas fa-hamburger"></i><span>Food Menu</span></div>
+      <div class="nav-button"><i class="fas fa-check-circle"></i><span>About Us</span></div>
+      <div class="nav-button"><i class="fas fa-chalkboard-teacher"></i><span>Video Clip</span></div>
+      <hr/>
+      <div class="nav-button"><i class="fas fa-gem"></i><span>Hendacagon Pro</span></div>
+      <div id="nav-content-highlight"></div>
+    </div>
+    <input id="nav-footer-toggle" type="checkbox"/>
+    <div id="nav-footer">
+      <div id="nav-footer-heading">
+        <div id="nav-footer-avatar"><img src="https://gravatar.com/userimage/241321798/da5ee02d0bbee283955d5a99dffcc532.jpeg?size=256"/></div>
+        <div id="nav-footer-titlebox"><a id="nav-footer-title" href="https://www.facebook.com/profile.php?id=61552326696109" target="_blank">Yormssss</a><span id="nav-footer-subtitle">Admin</span></div>
+        <label for="nav-footer-toggle"><i class="fas fa-caret-up"></i></label>
+      </div>
+      <div id="nav-footer-content">
+        <Lorem>This is just a Basic Web Application not for Fun .</Lorem>
+      </div>
+    </div>
+  </div>
+
+  
+</body>
+</html>
